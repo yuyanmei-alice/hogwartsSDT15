@@ -24,7 +24,7 @@ def test_connDB():
     print('关闭数据库连接')
 
 
-@pytest.fixture(scope="class", autouse=True)
+@pytest.fixture(scope="module", autouse=True)
 def get_cal():
     print("计算开始")
     calc = Calculator()
