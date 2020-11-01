@@ -25,7 +25,7 @@ class TestAppium():
         self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
         self.driver.implicitly_wait(5)
 
-    # 登录企业微信>点击工作台>打卡
+    # 登录企业微信>点击工作台>打卡>外出打卡
     def test_appium(self):
         self.driver.find_element(MobileBy.XPATH, "//*[@text='工作台']").click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,
