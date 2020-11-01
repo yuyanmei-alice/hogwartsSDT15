@@ -16,4 +16,5 @@ class TestSelenium():
 
     def test_chrome(self):
         self.driver.get("https://work.weixin.qq.com/wework_admin/frame")
+        self.driver.find_element_by_id("username")
 
