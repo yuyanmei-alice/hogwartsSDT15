@@ -3,6 +3,7 @@
 '''
 @author : yuyanmei
 @Date :2020/10/28 17:43
+企业微信>页面基类
 '''
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
