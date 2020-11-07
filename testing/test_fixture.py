@@ -3,6 +3,7 @@
 '''
 @author : yuyanmei
 @Date :2020/10/22 10:46
+装饰器测试类
 '''
 import pytest
 
