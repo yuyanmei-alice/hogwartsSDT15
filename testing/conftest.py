@@ -19,6 +19,9 @@ def login():
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+'''
+装饰器配置文件
+'''
 
 
 @pytest.fixture(scope='session', autouse=False)
