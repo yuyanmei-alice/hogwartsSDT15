@@ -3,6 +3,7 @@
 '''
 @author : yuyanmei
 @Date :2020/10/21 10:36
+用例参数化测试类：笛卡尔积
 '''
 import pytest
 
