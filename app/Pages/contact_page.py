@@ -23,7 +23,7 @@ class ContactPage(BasicPage):
         self.findAndClick(By.XPATH, "//*[@text='添加成员']")
         return AddMember(self.driver)
 
-    # 搜索
+    # 搜索图标进入搜索页面
     def goto_search_contact(self):
         self.findAndClick(By.ID, "com.tencent.wework:id/hxw")
         return SearchPage(self.driver)
