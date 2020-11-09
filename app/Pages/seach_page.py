@@ -20,6 +20,13 @@ class SearchPage(BasicPage):
         from app.Pages.contact_detail_page import ContactDetailPage
         return ContactDetailPage(self.driver)
 
+    def is_have_searchResult(self):
+        if len(self.finds(By.XPATH, "//*[@text='联系人']")) > 0:
+            return True
+        else:
+            return False
+
+
 
 
 
