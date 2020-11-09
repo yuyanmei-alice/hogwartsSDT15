@@ -25,7 +25,7 @@ class BasicPage():
             caps["skipServerInstallation"] = "True"
             # caps["dontStopAppOnReset"] = "True"
             self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
-            self.driver.implicitly_wait(5)
+            self.driver.implicitly_wait(8)
         else:
             self.driver = driver
 
@@ -38,5 +38,15 @@ class BasicPage():
     def getPageSource(self):
         return self.driver.page_source
 
+    def finds(self, by, locator):
+        return self.driver.find_elements(by, locator)
+
     def waitElementPresent(self, by, locator):
         return WebDriverWait(self.driver, 5, 0.5).until(EC.presence_of_all_elements_located((by, locator)))
+
+    def stop(self):
+        self.driver.quit()
+
+    def goto_main(self):
+        from app.Pages.main_page import MainPage
+        return MainPage(self.driver)
