@@ -1,0 +1,8 @@
+platformName: android
+deviceName: 127.0.0.1:62001
+appPackage: com.xueqiu.android
+appActivity: .view.WelcomeActivityAlias
+noReset: True
+skipDeviceInitialization: True
+skipServerInstallation: True
+server: http://localhost:4723/wd/hub
