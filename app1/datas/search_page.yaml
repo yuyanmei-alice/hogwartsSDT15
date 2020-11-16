@@ -1,0 +1,8 @@
+search:
+  - by : id
+    locator: com.xueqiu.android:id/search_input_text
+    action: send
+    value: alibaba
+  - by: xpath
+    locator: //*[@resource-id='com.xueqiu.android:id/listview' ]//android.widget.TextView[@text='BABA']
+    action: click
