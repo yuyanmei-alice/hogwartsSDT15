@@ -69,3 +69,10 @@ class BasePage:
                     self.find(step['by'], step['locator']).click()
                 elif "send" == step['action']:
                     self.find(step['by'], step['locator']).send_keys(step['value'])
+
+    def back_to_main(self, backTimes):
+        for i in range(backTimes):
+            self.driver.back()
+
+
+

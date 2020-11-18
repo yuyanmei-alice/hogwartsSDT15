@@ -13,3 +13,10 @@ class NewsPage(BasePage):
     def goto_search(self):
         self.test_get_test_steps_from_yaml('goto_search', '../datas/news_page.yaml')
         return SearchPage(self.driver)
+
+    # 回雪球主页
+    def goto_index(self):
+        self.test_get_test_steps_from_yaml('goto_index', '../datas/news_page.yaml')
+        return SearchPage(self.driver)
+
+
