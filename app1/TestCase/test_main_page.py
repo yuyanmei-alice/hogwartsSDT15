@@ -3,19 +3,23 @@
 '''
 @author : yuyanmei
 @Date :2020/11/10 13:44
+
+
 '''
+import allure
 import pytest
 
 from app1.Pages.base_page import BasePage
 
 
 class TestMainPage:
+    @allure.title('主页点击行情按钮')
+    def test_goto_news(self, setup_app):
+        setup_app.goto_main().goto_news().goto_index()
 
-    def setup(self):
-        self.app = BasePage()
 
-    def teardown(self):
-        self.app.stop_app()
 
-    def test_goto_news(self):
-        self.app.goto_main().goto_news()
+
+
+
+
